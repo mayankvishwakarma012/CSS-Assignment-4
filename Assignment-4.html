@@ -7,6 +7,7 @@
     <title>Document</title>
 </head>
 <style>
+    /*main container*/
     .container {
         display: flex;
         flex-direction: column;
@@ -14,6 +15,7 @@
         margin: 0px 15%;
     }
     
+    /*container with border*/
     .img-container {
         margin-bottom: 30px;
         border: 2px solid black;
@@ -25,6 +27,7 @@
         padding: 10px;
     }
     
+    /* image position top */
     .image1 {
         background-image: url('image.png');
         background-position: top;
@@ -34,6 +37,7 @@
         max-height: 200px;
     }
     
+    /* image position bottom */
     .image2 {
         background-image: url('image.png');
         background-position: bottom;
@@ -42,6 +46,7 @@
         min-height: 210px;
     }
     
+    /*image-box in center*/
     .img-box {
         display: flex;
         flex-direction: column;
@@ -51,6 +56,7 @@
         padding: 10px;
     }
     
+    /* image in center */
     .image3 {
         background-image: url('image.png');
         background-position: center;
@@ -63,8 +69,8 @@
 </style>
 
 <body>
-    <div class="container">
-        <div class="img-container">
+    <div class="container"><!-- main container-->
+        <div class="img-container"><!-- container with border-->
             <p>Image 1</p>
             <div class="image1"></div>
         </div>
@@ -72,7 +78,7 @@
             <p>Image 2</p>
             <div class="image2"></div>
         </div>
-        <div class="img-box">
+        <div class="img-box"><!-- image-box in center-->
             <p>Image 3</p>
             <div class="image3"></div>
         </div>
