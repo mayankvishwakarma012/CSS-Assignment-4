@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 0px 15%;
+    }
+    
+    .img-container {
+        margin-bottom: 30px;
+        border: 2px solid black;
+        max-height: 250px;
+    }
+    
+    .img-container p {
+        margin: 0;
+        padding: 10px;
+    }
+    
+    .image1 {
+        background-image: url('image.png');
+        background-position: top;
+        background-size: cover;
+        width: 100%;
+        min-height: 200px;
+        max-height: 200px;
+    }
+    
+    .image2 {
+        background-image: url('image.png');
+        background-position: bottom;
+        background-size: cover;
+        width: 100%;
+        min-height: 210px;
+    }
+    
+    .img-box {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .img-box p {
+        padding: 10px;
+    }
+    
+    .image3 {
+        background-image: url('image.png');
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 500px;
+        height: 300px;
+        align-self: center;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="img-container">
+            <p>Image 1</p>
+            <div class="image1"></div>
+        </div>
+        <div class="img-container">
+            <p>Image 2</p>
+            <div class="image2"></div>
+        </div>
+        <div class="img-box">
+            <p>Image 3</p>
+            <div class="image3"></div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
